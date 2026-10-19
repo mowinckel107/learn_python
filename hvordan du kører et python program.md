@@ -1,3 +1,6 @@
+
+# Så du vil lære python
+
 Halloj!
 
 Ved siden af alle python fil er der 4 .bat filer der starter med "kør"
