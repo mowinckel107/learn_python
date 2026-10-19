@@ -13,8 +13,8 @@
 # 1: Hvad er en variabel
 # 2: Hvad er en funktion
 
-# Du kan læse programmet, og du må gerne lave om på ting og se hvad forskel det gør
-# når du kører programmet :3
+# Du kan læse programmet, og du må gerne lave om på ting og se hvad forskel det
+# gør når du kører programmet :3
 
 
 
@@ -119,11 +119,10 @@ print("Ved du hvorfor jeg skriver " + resultatet_som_str + "?")
 
 # Jeg har lavet en fil der hedder "hvordan du kører et python program.txt" som 
 # hjælper dig med at køre python programmer! :D
+# Dobbelt klik på den og læs den. Det tager ingen tid :3
+
 # Prøv at køre programmet. Prøv at lave om i ting. Gæt på hvad det vil gøre, og se om det sker :3
 # For eksempel, hvad sker der hvis du dividere med 0? Prøv at gætte først og så kør det
-
-
-
 
 
 
