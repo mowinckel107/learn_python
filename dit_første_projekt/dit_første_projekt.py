@@ -3,7 +3,7 @@
 
 
 # Vi skal bruge funktioner fra "sys.pyi" og "os.pyi" (.pyi betyder "python interne filer")
-# Disse er automatisk er installeret med python
+# Disse er automatisk installeret med python
 import sys
 import os
 
@@ -59,23 +59,25 @@ plan for what we are doing today
 """
 
 # Dette er hoved-funktionen
-# HELE den her python fil er kun et funktions kald neders i programmet
+# HELE den her python fil er kun et funktions-kald nederst i programmet
 # Dette er gjort så man kan læse koden ovenfra og ned og forstå den
 # Du kan finde ud af mere ved at søge "python forward declaration" på internettet
-def kør_Historieskriveren():
+def kør_Historieskriveren() -> None:
 
   skriv_titlen_hvis_der_er_en()
 
   brugerens_navn : str = læs_brugerens_navn_fra_filen()
 
-  print(f"Hej {brugerens_navn}, velkommen til din historie")
+  print("Hej " + brugerens_navn + ", velkommen til din historie")
 
 
-  navnord_1 : str = få_et_navnord_fra_brugeren()
+  navneord_1 : str = få_et_navnord_fra_brugeren()
   udsagnsord_1 : str = få_et_udsagnsord_fra_brugeren()
-  navnord_2 : str = få_et_navnord_fra_brugeren()
+  navneord_2 : str = få_et_navnord_fra_brugeren()
 
-  skriv_historien(navnord_1, udsagnsord_1, navnord_2)
+  skriv_historien(navneord_1, udsagnsord_1, navneord_2)
+
+  # Når du har læst den her funktion, kan du undersøge hvordan de enkelte funktioner virker! :D
 
 
 
@@ -84,11 +86,14 @@ def kør_Historieskriveren():
 def skriv_titlen_hvis_der_er_en():
   historiens_titel : str = få_historie_titlen_fra_programmets_argumenter()
 
+  # En bool er en påstand der er sand eller falsk
+  # Vi bruger den her til at finde ud af om brugeren har givet os en titel
   der_er_en_titel : bool = historiens_titel != ""
 
   if(der_er_en_titel):
     print(f"Velkommen til {historiens_titel}")
 
+  # Hvis du VIL give den en titel, så åbn .bat filen og skriv titlen (1 ord, så brug _ som mellemrum) til sidst i den l
 
 
 
@@ -113,24 +118,27 @@ def læs_brugerens_navn_fra_filen() -> str:
   
   filens_placering : str = os.path.join(placeringen_på_folderen_python_filen_er_i, "brugerens_navn.txt")
 
+  print(filens_placering)
+
   filen : TextIOWrapper = open(filens_placering)
 
   filens_indhold : str = filen.read()
 
+  return filens_indhold
 
 
 
 
 def få_et_navnord_fra_brugeren() -> str:
   print("")
-  print("Jeg skal bruge et navnord. Skriv det og klik 'enter'")
+  print("Jeg skal bruge et navneord. Skriv det og klik 'enter'")
 
-  navnord : str = input()
+  navneord : str = input()
 
   print("Tak!")
   print("")
 
-  return navnord
+  return navneord
 
 
 
@@ -151,11 +159,13 @@ def få_et_udsagnsord_fra_brugeren() -> str:
 
 
 
-def skriv_historien(navnord_1 : str, udsagnsord : str, navnord_2 : str):
+def skriv_historien(navneord_1 : str, udsagnsord : str, navneord_2 : str):
 
-  print(f"Så {navnord_1} kom {udsagnsord} en dag, og pludselig så den en {navnord_2}")
+  print("Så " + navneord_1 + " kom " + udsagnsord + " en dag, og pludselig så den en " + navneord_2)
 
   # Hvis du læser de næste 4 linjer, kan du så regne ud hvorfor vi har skrevet dem?
+  print("") # Ny linje
+  print("") # Ny linje
   print("") # Ny linje
   print("For at stoppe programmet fra at lukke når det er færdigt så")
   print("venter vi til allersidst på at du klikker 'enter'")
