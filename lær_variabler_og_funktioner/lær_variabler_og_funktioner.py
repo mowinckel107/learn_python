@@ -30,7 +30,7 @@
 # Lad os lave en variabel
 et_heltal : int = 0
 
-# Variablens navn er Min_heltals_variabel
+# Variablens navn er et_heltal
 # Variablens type er int (betyder heltal)
 # Variablens værdi er 0
 
@@ -83,9 +83,12 @@ mit_navn = ""
 # Funktioner er hvordan koden GØR ting
 
 
-# Lad os kører funktionen "print" med en "str" variabel
+# Lad os køre funktionen "print" med en "str" variabel
 besked_til_brugeren : str = "Du har kørt et python program! :D"
 print(besked_til_brugeren)
+# Prøv at lave om i besked_til_brugeren variablen og kør programmet igen for
+# at se dine ændringer (Husk at gemme dine ændringer)
+
 
 # Vi kan også definere vores egene funktioner med order "def"
 
@@ -93,31 +96,43 @@ print(besked_til_brugeren)
 # Derefter skriver vi hvad funktionen gør
 # Alt indeni funktionen starter med 2 mellemrum
 
-# Vi definere en funktion der dividere 2 tal med hinanden. Den tager 2 heltal(int), og returnere et kommatal(float)
+# Vi definerer en funktion der dividerer 2 tal med hinanden. Den tager 2 heltal(int), og returnerer et kommatal(float)
 def divider_2_tal(det_første_tal : int, det_andet_tal : int) -> float:
+
   # Vi gemmer resultatet i en variabel af type "float"
   resultat : float = det_første_tal / det_andet_tal
-  # Vi returnere resultatet
+  # Vi returnerer resultatet
   return resultat
 
 
 # Nu kan vi kalde funktionen! :D
-resultatet_som_float : float = divider_2_tal(5, 2)
+resultatet_som_float : float = divider_2_tal(10, 2)
+# Prøv at lave om på de tal du giver funktionen og kør programmet igen og se ændringen
+# Hvad sker der hvis du dividere med 0?
+
+# Nu vil vi gerne se resultatet når vi kører programmet
+# Men man kan kun skrive "str" typer ud
+# SÅ! Vi skal have lavet vores "float" om til en "str"
 
 # Vi kan lave variabler som int, float eller bools om til "str" ved at kalde "str" funktionen:
-resultatet_som_str : str = str(resultatet_som_float)
+# Vi laver en variabel som vi kan putte resultatet som str ind i
+resultatet_som_str : str = ""
+
+# Så kalder vi "str" funktionen, og lægger resultatet i "resultatet_som_str" variablen
+resultatet_som_str = str(resultatet_som_float)
 
 # Vi kan skrive en tom linje for at gøre vores tekst til brugeren pænere
 print("")
-# Vi kan også lave str variabler ved at lægge flere str typer sammen! :D
+# Vi kan også lave str variabler ved at lægge flere "str" typer sammen! :D
 print("Ved du hvorfor jeg skriver " + resultatet_som_str + "?")
+# Prøv at lave om i det der bliver skrevet ud
+# Der er 3 strenge lagt sammen. Hvorfor slutter den første streng med et mellemrum?
 
 # Så når vi kører vores program med .bat filen kan vi se at det virker!
 
 
-# SÅ! Tid til at køre vores program!
-
-# Jeg har lavet en fil der hedder "hvordan du kører et python program.txt" som 
+# Hvis du ikke ved hvordan du kører den her python fil, så find og
+# læs "hvordan du kører et python program.txt" som 
 # hjælper dig med at køre python programmer! :D
 # Dobbelt klik på den og læs den. Det tager ingen tid :3
 
@@ -125,6 +140,7 @@ print("Ved du hvorfor jeg skriver " + resultatet_som_str + "?")
 # For eksempel, hvad sker der hvis du dividere med 0? Prøv at gætte først og så kør det
 
 
+# Nu kan du gå videre til "mit første projekt"
 
 
 # Hvis du læser de næste 4 linjer, kan du så regne ud hvorfor vi har skrevet dem?

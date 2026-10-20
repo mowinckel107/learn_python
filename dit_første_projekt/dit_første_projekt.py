@@ -2,7 +2,8 @@
 
 
 
-
+# Vi skal bruge funktioner fra "sys.pyi" og "os.pyi" (.pyi betyder "python interne filer")
+# Disse er automatisk er installeret med python
 import sys
 import os
 
@@ -57,6 +58,10 @@ plan for what we are doing today
 
 """
 
+# Dette er hoved-funktionen
+# HELE den her python fil er kun et funktions kald neders i programmet
+# Dette er gjort så man kan læse koden ovenfra og ned og forstå den
+# Du kan finde ud af mere ved at søge "python forward declaration" på internettet
 def kør_Historieskriveren():
 
   skriv_titlen_hvis_der_er_en()
@@ -150,6 +155,11 @@ def skriv_historien(navnord_1 : str, udsagnsord : str, navnord_2 : str):
 
   print(f"Så {navnord_1} kom {udsagnsord} en dag, og pludselig så den en {navnord_2}")
 
+  # Hvis du læser de næste 4 linjer, kan du så regne ud hvorfor vi har skrevet dem?
+  print("") # Ny linje
+  print("For at stoppe programmet fra at lukke når det er færdigt så")
+  print("venter vi til allersidst på at du klikker 'enter'")
+  brugerens_input : str = input()
 
 
 
