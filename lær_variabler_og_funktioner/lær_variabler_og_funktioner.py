@@ -93,6 +93,8 @@ print(besked_til_brugeren)
 # Vi kan også definere vores egene funktioner med order "def"
 
 # Det gør vi med order "def"
+# Derefter giver vi funktionen et navn uden mellemrum
+# Derefter skriver vi hvilke argumenter funktionen tager i (parentes)
 # Derefter skriver vi hvad funktionen gør
 # Alt indeni funktionen starter med 2 mellemrum
 
