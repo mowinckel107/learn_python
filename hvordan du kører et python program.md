@@ -7,10 +7,11 @@ Ved siden af alle python fil er der 4 .bat filer der starter med "kør"
 Dobbelt klik på dem en af gangen
 Når en sort textbox dukker op og skriver ting til dig på dansk, så har du fundet den der virker for dig!
 Slet de 3 andre filer. Ingen grund til at have dem for dig
- 
+  
 Det var det. Hvis du gerne vil vide HVORFOR så kan du læse det til sidst i det her dokument.
 
-Men ellers så kør file som ligger i mappen "lær_variabler_og_funktioner" og åbn .py filen og læs den
+
+Men ellers så kør bat filen der virker for dig i mappen "lær_variabler_og_funktioner" og åbn .py filen og læs den
 Derefter kør og åbn og læs .py filen som ligger i "dit_første_projekt" mappen
 
 
