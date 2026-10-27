@@ -21,3 +21,8 @@ start derefter med at åbne og læse filen: [./"hvordan du kører et python prog
 
 ### Online
 
+Kør programmet og læs det derefter her:
+https://www.online-python.com/pcFAUPLCqT
+
+Derefter så gør det samme her:
+https://www.online-python.com/6CgvrxYz5E
